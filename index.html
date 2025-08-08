@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <title>TOP-Project: Sign-up Form</title>
+    </head>
+    <body>
+        <div class="page">
+            <div class="left">
+                <div class="logo-container">
+                    <img class="logo-image" src="./Images/odin-lined.png" alt="TOP-Logo" >
+                    <h1 class="logo-text">ODIN</h1>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+                    <br>
+                    <p>You <i>know</i> you want to.</p>
+                </div>
+                <div class="middle">
+                    <form action="" method="POST">
+                        <div class="formTitle">
+                            <h3>Let's do this!</h3>
+                        </div>
+                        <div class="formFields">
+                            <div class="formItem">
+                                <label for="fname">FIRST NAME</label>
+                                <br>
+                                <input type="text" name="fname" id="fname" pattern="[α-ωΑ-Ω]">
+                            </div>
+                            
+                            <div class="formItem">
+                                <label for="lname">LAST NAME</label>
+                                <br>
+                                <input type="text" name="lname" id="lname" pattern="[α-ωΑ-Ω]">
+                            </div>
+                            
+                            <div class="formItem">
+                                <label for="email">EMAIL</label>
+                                <br>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            
+                            <div class="formItem">
+                                <label for="phone">PHONE NUMBER</label>
+                                <br>
+                                <input type="tel" name="phone" id="phone" maxlength="10" pattern="^(69|21|22|23|24|25|26|27|28)\d{8}">
+                            </div>
+                            
+                            <div class="formItem">
+                                <label for="pass">PASSWORD</label>
+                                <br>
+                                <input type="password" name="pass" id="password" minlength="8" maxlength="128"
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                            </div>
+                            
+                            <div class="formItem">
+                                <label for="confirm">CONFIRM PASSWORD</label>
+                                <br>
+                                <input type="password" name="confirm" 
+                                id="confirm" minlength="8" maxlength="128"
+                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                            </div>
+                        </div>
+                
+                        <div class="formButton">
+                            <input type="submit" id="button" value="Create Account">
+                        </div>
+                    </form>
+                </div>
+                <div class="bottom">
+                    <p>Already have an account? <span style="color:#596D48; font-weight: bold;">Log in</span></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
